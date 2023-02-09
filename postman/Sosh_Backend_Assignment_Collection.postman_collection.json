@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "f5d43a9e-68ad-49b7-9e68-b759b2960b59",
+		"name": "Sosh  Backend Assignment Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "johndoe@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "johndoe@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/blog",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2U0YmJlYTBhZWI1NmI1ZDAzMzI5NTQiLCJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwiaWF0IjoxNjc1OTM0NzAxLCJleHAiOjE2NzU5MzgzMDF9.1B8jWMZA-SUquSlD9vMY1-G0Iiq7ZbbTUXUBudLVIGU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "I am updating the dummy blog title",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "I am updating the dummy blog title",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/blog/63e4bc170aeb56b5d0332959",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog",
+						"63e4bc170aeb56b5d0332959"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Blog",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2U0YmJlYTBhZWI1NmI1ZDAzMzI5NTQiLCJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwiaWF0IjoxNjc1OTM0NzAxLCJleHAiOjE2NzU5MzgzMDF9.1B8jWMZA-SUquSlD9vMY1-G0Iiq7ZbbTUXUBudLVIGU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "This is a dummy blog title",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "This is a dummy blog description",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/blog",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Blog",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2U0YmJlYTBhZWI1NmI1ZDAzMzI5NTQiLCJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwiaWF0IjoxNjc1OTM0NzAxLCJleHAiOjE2NzU5MzgzMDF9.1B8jWMZA-SUquSlD9vMY1-G0Iiq7ZbbTUXUBudLVIGU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/blog/63e4bc170aeb56b5d0332959",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"blog",
+						"63e4bc170aeb56b5d0332959"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2U0YmJlYTBhZWI1NmI1ZDAzMzI5NTQiLCJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwiaWF0IjoxNjc1OTM0NzAxLCJleHAiOjE2NzU5MzgzMDF9.1B8jWMZA-SUquSlD9vMY1-G0Iiq7ZbbTUXUBudLVIGU",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

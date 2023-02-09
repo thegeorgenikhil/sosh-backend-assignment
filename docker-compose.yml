@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  dev-db:
+    image: mongo:3.6
+    container_name: dev-db
+    restart: always
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+  test-db:
+    image: mongo:3.6
+    container_name: test-db
+    restart: always
+    ports:
+      - 27018:27017
+    networks:
+      - backend
+networks:
+  backend:
